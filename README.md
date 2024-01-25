@@ -4,7 +4,7 @@
 <code>🧻 [Projects](PROJECTS.md)</code>
 <code>📢 [Public talks: 0](TALKS.md)</code>
 <code>👀 [Open-source contribution](CONTRIBUTION.md)</code><br>
-<code>🧑‍💻 Languages: HTML, CSS, JavaScript, TypeScript</code>
+<code>🧑‍💻 Languages: HTML, CSS, JavaScript, TypeScript, Go</code>
 <code>📦 Tech stack: React, node.js</code>
 <code>🪙 [Rates](RATES.md)</code><br>
 <code>💬 telegram: [@evsedov](https://telegram.me/evsedov)</code>
