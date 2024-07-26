@@ -1,5 +1,5 @@
 <code>⚪ Community: Hexlet, Metarhia</code>
-<code>👷 Speciality: Junior developer / Frontend / Backend</code><br>
+<code>👷 Speciality: developer / Frontend / Backend</code><br>
 <code>💡 [Skills](SKILLS.md)</code>
 <code>🧻 [Projects](PROJECTS.md)</code>
 <code>📢 [Public talks: 0](TALKS.md)</code>
