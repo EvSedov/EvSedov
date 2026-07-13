@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./light.svg">
+  <img alt="Evgeniy Sedov — Vue TypeScript Developer and AI Infrastructure Builder" src="./dark.svg" width="100%">
+</picture>
+
 <code>⚪ Community: Hexlet, Metarhia</code>
 <code>👷 Speciality: developer / Frontend / Backend</code><br>
 <code>💡 [Skills](SKILLS.md)</code>

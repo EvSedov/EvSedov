@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" role="img" aria-labelledby="title desc">
+  <title id="title">Evgeniy Sedov — GitHub Profile Hero Banner</title>
+  <desc id="desc">Animated premium dark GitHub profile banner for Evgeniy Sedov, Vue TypeScript developer and AI infrastructure builder.</desc>
+
+  <defs>
+    <linearGradient id="borderGradient" x1="0" y1="0" x2="1180" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity=".25"/>
+      <stop offset="35%" stop-color="#22D3EE" stop-opacity=".7"/>
+      <stop offset="70%" stop-color="#10B981" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity=".25"/>
+      <animate attributeName="x1" values="-1180;0;1180" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;1180;2360" dur="9s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="asciiGradient" x1="0" y1="0" x2="430" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="45%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#10B981"/>
+      <animateTransform attributeName="gradientTransform" type="rotate" from="0 215 215" to="360 215 215" dur="18s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="accentGradient" x1="575" y1="0" x2="1045" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="52%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#10B981"/>
+      <animate attributeName="x1" values="520;650;520" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="980;1110;980" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <radialGradient id="glowPurple" cx="22%" cy="18%" r="55%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity=".34"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="78%" cy="25%" r="58%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowEmerald" cx="63%" cy="88%" r="52%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#000000" flood-opacity=".38"/>
+    </filter>
+
+    <filter id="asciiGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="panelGlow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#22D3EE" flood-opacity=".13"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="20" flood-color="#7C3AED" flood-opacity=".10"/>
+    </filter>
+
+    <filter id="noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 .045"/>
+      </feComponentTransfer>
+    </filter>
+
+    <clipPath id="outerClip">
+      <rect x="0" y="0" width="1180" height="610" rx="34" ry="34"/>
+    </clipPath>
+
+    <clipPath id="terminalClip">
+      <rect x="520" y="70" width="590" height="470" rx="24" ry="24"/>
+    </clipPath>
+
+    <clipPath id="roleClip1"><rect x="604" y="230" width="0" height="34"><animate attributeName="width" values="0;238;238;0;0" keyTimes="0;.08;.20;.24;1" dur="13s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="roleClip2"><rect x="604" y="230" width="0" height="34"><animate attributeName="width" values="0;0;248;248;0;0" keyTimes="0;.25;.33;.45;.49;1" dur="13s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="roleClip3"><rect x="604" y="230" width="0" height="34"><animate attributeName="width" values="0;0;178;178;0;0" keyTimes="0;.50;.58;.70;.74;1" dur="13s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="roleClip4"><rect x="604" y="230" width="0" height="34"><animate attributeName="width" values="0;0;286;286;0" keyTimes="0;.75;.83;.95;1" dur="13s" repeatCount="indefinite"/></rect></clipPath>
+
+    <mask id="fadeMask">
+      <rect x="0" y="0" width="1180" height="610" fill="white"/>
+      <rect x="0" y="540" width="1180" height="70" fill="url(#bottomFade)"/>
+    </mask>
+    <linearGradient id="bottomFade" x1="0" y1="540" x2="0" y2="610" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="white"/>
+      <stop offset="100%" stop-color="black"/>
+    </linearGradient>
+  </defs>
+
+  <g clip-path="url(#outerClip)">
+    <rect width="1180" height="610" fill="#030712"/>
+    <rect width="1180" height="610" fill="url(#glowPurple)"/>
+    <rect width="1180" height="610" fill="url(#glowCyan)"/>
+    <rect width="1180" height="610" fill="url(#glowEmerald)"/>
+    <rect width="1180" height="610" filter="url(#noise)" opacity=".72"/>
+
+    <g opacity=".62">
+      <circle cx="86" cy="122" r="1.4" fill="#22D3EE"><animate attributeName="cy" values="122;107;122" dur="8s" repeatCount="indefinite"/></circle>
+      <circle cx="1020" cy="104" r="1.7" fill="#A78BFA"><animate attributeName="cy" values="104;122;104" dur="9s" repeatCount="indefinite"/></circle>
+      <circle cx="950" cy="486" r="1.3" fill="#10B981"><animate attributeName="cx" values="950;970;950" dur="11s" repeatCount="indefinite"/></circle>
+      <circle cx="334" cy="520" r="1.2" fill="#22D3EE"><animate attributeName="cy" values="520;502;520" dur="10s" repeatCount="indefinite"/></circle>
+      <circle cx="462" cy="86" r="1.1" fill="#7C3AED"><animate attributeName="opacity" values=".2;.75;.2" dur="6s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <rect x="13" y="13" width="1154" height="584" rx="30" fill="none" stroke="url(#borderGradient)" stroke-width="1.4"/>
+    <rect x="30" y="30" width="1120" height="550" rx="28" fill="#0F172A" opacity=".34" stroke="rgba(255,255,255,.06)" filter="url(#softShadow)"/>
+
+    <g transform="translate(66 78)">
+      <animateTransform attributeName="transform" type="translate" values="66 78;66 68;66 78" dur="7s" repeatCount="indefinite"/>
+      <rect x="0" y="0" width="382" height="456" rx="28" fill="#0F172A" opacity=".46" stroke="rgba(255,255,255,.08)" filter="url(#panelGlow)"/>
+      <path d="M35 36 C85 6, 156 18, 205 54 C251 88, 297 78, 338 55" fill="none" stroke="#FFFFFF" stroke-opacity=".08" stroke-width="1.1"/>
+      <rect x="24" y="58" width="334" height="328" rx="18" fill="#020617" opacity=".42" stroke="#22D3EE" stroke-opacity=".12"/>
+
+      <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="16" font-weight="600" fill="url(#asciiGradient)" filter="url(#asciiGlow)" opacity=".96">
+        <text x="57" y="107">        .-""""-.</text>
+        <text x="57" y="132" opacity=".28">     .'/  _  _  \`.<animate attributeName="opacity" values=".28;1" begin=".35s" dur=".5s" fill="freeze"/></text>
+        <text x="57" y="157" opacity=".28">    /   (o)(o)   \<animate attributeName="opacity" values=".28;1" begin=".7s" dur=".5s" fill="freeze"/></text>
+        <text x="57" y="182" opacity=".28">   |      __      |<animate attributeName="opacity" values=".28;1" begin="1.05s" dur=".5s" fill="freeze"/></text>
+        <text x="57" y="207" opacity=".28">   |   .-'__'-.   |<animate attributeName="opacity" values=".28;1" begin="1.4s" dur=".5s" fill="freeze"/></text>
+        <text x="57" y="232" opacity=".28">    \  \____/  /<animate attributeName="opacity" values=".28;1" begin="1.75s" dur=".5s" fill="freeze"/></text>
+        <text x="57" y="257" opacity=".28">     '.        .'<animate attributeName="opacity" values=".28;1" begin="2.1s" dur=".5s" fill="freeze"/></text>
+        <text x="57" y="282" opacity=".28">       /`-..-'\<animate attributeName="opacity" values=".28;1" begin="2.45s" dur=".5s" fill="freeze"/></text>
+        <text x="57" y="307" opacity=".28">   ___/  |  |  \___<animate attributeName="opacity" values=".28;1" begin="2.8s" dur=".5s" fill="freeze"/></text>
+        <text x="57" y="332" opacity=".28">  /_____/|__|\_____\<animate attributeName="opacity" values=".28;1" begin="3.15s" dur=".5s" fill="freeze"/></text>
+      </g>
+
+      <rect x="42" y="80" width="298" height="34" fill="#22D3EE" opacity=".08">
+        <animate attributeName="y" values="80;352;80" dur="4.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values=".02;.14;.02" dur="4.8s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="60" y="348" width="10" height="20" rx="2" fill="#22D3EE">
+        <animate attributeName="opacity" values="1;0;1" dur="1.05s" repeatCount="indefinite"/>
+      </rect>
+      <text x="56" y="418" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12" fill="#94A3B8">
+        abstract developer silhouette / live terminal artifact
+      </text>
+    </g>
+
+    <g clip-path="url(#terminalClip)">
+      <rect x="520" y="70" width="590" height="470" rx="24" fill="#0F172A" opacity=".72" stroke="rgba(255,255,255,.09)" filter="url(#panelGlow)"/>
+      <path d="M535 92 C700 42, 906 60, 1090 92 L1090 130 C890 100, 706 116, 535 142Z" fill="#FFFFFF" opacity=".045"/>
+      <rect x="520" y="70" width="590" height="46" fill="#020617" opacity=".32"/>
+      <circle cx="552" cy="93" r="6" fill="#F87171" opacity=".85"/>
+      <circle cx="574" cy="93" r="6" fill="#FBBF24" opacity=".85"/>
+      <circle cx="596" cy="93" r="6" fill="#34D399" opacity=".85"/>
+      <text x="622" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12" fill="#64748B">~/evsedov/profile</text>
+
+      <text x="574" y="154" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="28" fill="#F8FAFC" font-weight="700">Hi 👋</text>
+      <text x="574" y="198" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="46" fill="#F8FAFC" font-weight="800" letter-spacing="-.035em">I'm Evgeniy Sedov</text>
+      <rect x="574" y="216" width="318" height="2" rx="1" fill="url(#accentGradient)">
+        <animate attributeName="opacity" values=".55;1;.55" dur="4s" repeatCount="indefinite"/>
+      </rect>
+
+      <text clip-path="url(#roleClip1)" x="604" y="256" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="23" fill="url(#accentGradient)" opacity="0">
+        Vue / TypeScript Developer
+        <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.08;.20;.24;1" dur="13s" repeatCount="indefinite"/>
+      </text>
+      <text clip-path="url(#roleClip2)" x="604" y="256" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="23" fill="url(#accentGradient)" opacity="0">
+        AI Infrastructure Builder
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.25;.33;.45;.49;1" dur="13s" repeatCount="indefinite"/>
+      </text>
+      <text clip-path="url(#roleClip3)" x="604" y="256" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="23" fill="url(#accentGradient)" opacity="0">
+        Frontend Engineer
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.50;.58;.70;.74;1" dur="13s" repeatCount="indefinite"/>
+      </text>
+      <text clip-path="url(#roleClip4)" x="604" y="256" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="23" fill="url(#accentGradient)" opacity="0">
+        Personal AI Systems Explorer
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.75;.83;.95;1" dur="13s" repeatCount="indefinite"/>
+      </text>
+      <rect x="574" y="238" width="12" height="26" rx="2" fill="#22D3EE">
+        <animate attributeName="opacity" values="1;0;1" dur=".9s" repeatCount="indefinite"/>
+      </rect>
+
+      <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" fill="#94A3B8">
+        <text x="574" y="306" opacity=".28">📍 Location<tspan fill="#F8FAFC" dx="22">Novosibirsk, Russia / Remote</tspan><animate attributeName="opacity" values=".28;1" begin="1.3s" dur=".55s" fill="freeze"/></text>
+        <text x="574" y="334" opacity=".28">🎓 Education<tspan fill="#F8FAFC" dx="18">Self-directed engineering path</tspan><animate attributeName="opacity" values=".28;1" begin="1.65s" dur=".55s" fill="freeze"/></text>
+        <text x="574" y="362" opacity=".28">🎯 Focus<tspan fill="#F8FAFC" dx="47">Frontend architecture · AI agents · PAI</tspan><animate attributeName="opacity" values=".28;1" begin="2s" dur=".55s" fill="freeze"/></text>
+        <text x="574" y="390" opacity=".28">✉ Email<tspan fill="#F8FAFC" dx="51">sedoff-online@yandex.ru</tspan><animate attributeName="opacity" values=".28;1" begin="2.35s" dur=".55s" fill="freeze"/></text>
+        <text x="574" y="418" opacity=".28">RU<tspan fill="#F8FAFC" dx="78">Интерфейсы · AI-агенты · PAI</tspan><animate attributeName="opacity" values=".28;1" begin="2.7s" dur=".55s" fill="freeze"/></text>
+      </g>
+
+      <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="700">
+        <g transform="translate(574 448)" opacity=".35"><animate attributeName="opacity" values=".35;1" begin="3s" dur=".5s" fill="freeze"/>
+          <rect width="52" height="28" rx="14" fill="#111827" stroke="#22D3EE" stroke-opacity=".28"/><text x="16" y="18" fill="#E0F2FE">Vue</text></g>
+        <g transform="translate(636 448)" opacity=".35"><animate attributeName="opacity" values=".35;1" begin="3.08s" dur=".5s" fill="freeze"/>
+          <rect width="92" height="28" rx="14" fill="#111827" stroke="#7C3AED" stroke-opacity=".28"/><text x="14" y="18" fill="#EDE9FE">TypeScript</text></g>
+        <g transform="translate(738 448)" opacity=".35"><animate attributeName="opacity" values=".35;1" begin="3.16s" dur=".5s" fill="freeze"/>
+          <rect width="54" height="28" rx="14" fill="#111827" stroke="#22D3EE" stroke-opacity=".28"/><text x="16" y="18" fill="#E0F2FE">Vite</text></g>
+        <g transform="translate(802 448)" opacity=".35"><animate attributeName="opacity" values=".35;1" begin="3.24s" dur=".5s" fill="freeze"/>
+          <rect width="62" height="28" rx="14" fill="#111827" stroke="#10B981" stroke-opacity=".28"/><text x="14" y="18" fill="#D1FAE5">Pinia</text></g>
+        <g transform="translate(874 448)" opacity=".35"><animate attributeName="opacity" values=".35;1" begin="3.32s" dur=".5s" fill="freeze"/>
+          <rect width="78" height="28" rx="14" fill="#111827" stroke="#7C3AED" stroke-opacity=".28"/><text x="14" y="18" fill="#EDE9FE">PrimeVue</text></g>
+        <g transform="translate(962 448)" opacity=".35"><animate attributeName="opacity" values=".35;1" begin="3.4s" dur=".5s" fill="freeze"/>
+          <rect width="66" height="28" rx="14" fill="#111827" stroke="#22D3EE" stroke-opacity=".28"/><text x="13" y="18" fill="#E0F2FE">Docker</text></g>
+        <g transform="translate(574 486)" opacity=".35"><animate attributeName="opacity" values=".35;1" begin="3.48s" dur=".5s" fill="freeze"/>
+          <rect width="68" height="28" rx="14" fill="#111827" stroke="#10B981" stroke-opacity=".28"/><text x="14" y="18" fill="#D1FAE5">Node.js</text></g>
+        <g transform="translate(652 486)" opacity=".35"><animate attributeName="opacity" values=".35;1" begin="3.56s" dur=".5s" fill="freeze"/>
+          <rect width="42" height="28" rx="14" fill="#111827" stroke="#7C3AED" stroke-opacity=".28"/><text x="13" y="18" fill="#EDE9FE">Git</text></g>
+        <g transform="translate(704 486)" opacity=".35"><animate attributeName="opacity" values=".35;1" begin="3.64s" dur=".5s" fill="freeze"/>
+          <rect width="48" height="28" rx="14" fill="#111827" stroke="#22D3EE" stroke-opacity=".28"/><text x="13" y="18" fill="#E0F2FE">WSL</text></g>
+        <g transform="translate(762 486)" opacity=".35"><animate attributeName="opacity" values=".35;1" begin="3.72s" dur=".5s" fill="freeze"/>
+          <rect width="68" height="28" rx="14" fill="#111827" stroke="#10B981" stroke-opacity=".28"/><text x="14" y="18" fill="#D1FAE5">OpenAI</text></g>
+        <g transform="translate(840 486)" opacity=".35"><animate attributeName="opacity" values=".35;1" begin="3.8s" dur=".5s" fill="freeze"/>
+          <rect width="84" height="28" rx="14" fill="#111827" stroke="#7C3AED" stroke-opacity=".28"/><text x="14" y="18" fill="#EDE9FE">AI Agents</text></g>
+        <g transform="translate(934 486)" opacity=".35"><animate attributeName="opacity" values=".35;1" begin="3.88s" dur=".5s" fill="freeze"/>
+          <rect width="74" height="28" rx="14" fill="#111827" stroke="#22D3EE" stroke-opacity=".28"/><text x="14" y="18" fill="#E0F2FE">Obsidian</text></g>
+        <g transform="translate(1018 486)" opacity=".35"><animate attributeName="opacity" values=".35;1" begin="3.96s" dur=".5s" fill="freeze"/>
+          <rect width="42" height="28" rx="14" fill="#111827" stroke="#10B981" stroke-opacity=".28"/><text x="13" y="18" fill="#D1FAE5">PAI</text></g>
+      </g>
+    </g>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" fill="#94A3B8">
+      <text x="72" y="560">github.com/EvSedov</text>
+      <text x="268" y="560">telegram: @evsedov</text>
+      <text x="480" y="560">pure SVG · SMIL · no JavaScript</text>
+    </g>
+  </g>
+</svg>
